@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 /// References:
 /// - https://en.cppreference.com/w/cpp/types/enable_if
@@ -39,4 +40,24 @@ struct is_string<std::string> : std::true_type {};
 template <typename T>
 typename std::enable_if<is_string<T>::value>::type print_ip(const T& ip) {
   std::cout << ip;
+}
+
+
+template <typename T>
+struct is_vector : std::false_type {};
+
+template <typename... Args>
+struct is_vector<std::vector<Args ...> > : std::true_type {};
+
+/// @brief  Prints IP represented as std::vector
+/// @tparam T - std::vector type
+/// @param  ip - IP address
+/// @author Oleg Potkin <olpotkin@gmail.com>
+template <typename T>
+std::enable_if_t<is_vector<T>::value> print_ip(const T& ip) {
+  // Iterate through the vector
+  for (const auto& it : ip) {
+    std::cout << it;
+    std::cout << (&it != &ip.back() ? "." : "");
+  }
 }
