@@ -1,8 +1,8 @@
 language: cpp
 compiler: clang
 before_script:
+- sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
 - sudo apt update
-- echo "deb http://archive.ubuntu.com/ubuntu xenial main universe" | sudo tee -a /etc/apt/sources.list.d/xenial.list
 - sudo apt-get install doxygen -y
 script:
 - cmake .
