@@ -1,18 +1,25 @@
-dist: trusty
 language: cpp
-compiler: gcc
+sudo: required
 
-addons:
-  apt:
-    packages:
-      - doxygen
-      - graphviz
+before_install:
+  - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+  - sudo apt-get update -qq
+
+install:
+  - sudo apt-get install g++-6 cmake doxygen graphviz -y
+  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-6 90
+
+before_script:
+  - ls
+  - gcc --version
+  - g++ --version
+  - cmake --version
 
 script:
-- cmake .
-- cmake --build .
-- cmake --build . --target package
-- doxygen
+  - cmake .
+  - cmake --build .
+  - cmake --build . --target package
+  - doxygen
 
 deploy:
   - provider: pages
