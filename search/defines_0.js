@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['project_5fversion_5fpatch',['PROJECT_VERSION_PATCH',['../version_8h.html#a4a5fc96a4bdd7d68ed99ccce9ca2e77e',1,'version.h']]]
+  ['architecture_5fid',['ARCHITECTURE_ID',['../_c_make_c_compiler_id_8c.html#aba35d0d200deaeb06aee95ca297acb28',1,'ARCHITECTURE_ID():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#aba35d0d200deaeb06aee95ca297acb28',1,'ARCHITECTURE_ID():&#160;CMakeCXXCompilerId.cpp']]]
 ];
