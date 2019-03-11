@@ -1,15 +1,17 @@
+dist: trusty
+sudo: required
 language: cpp
 compiler: clang
-dist: xenial
+
 before_script:
 - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
 - sudo apt update
-- sudo apt-get install doxygen -y
+- sudo apt-get install -y -qq graphviz doxygen
 script:
 - cmake .
 - cmake --build .
 - cmake --build . --target package
-- doxygen
+- doxygen Doxyfile
 deploy:
   - provider: pages
     skip_cleanup: true
