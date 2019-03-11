@@ -1,4 +1,8 @@
+dist: xenial
+sudo: required
 language: cpp
+compiler: clang
+
 addons:
   apt:
     packages:
