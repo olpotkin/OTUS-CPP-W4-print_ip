@@ -1,5 +1,6 @@
 #include "core/print_ip.h"
 
+/// @file
 
 /// @brief  Main function. Prints IP addresses in multiple formats
 /// @author Oleg Potkin <olpotkin@gmail.com>
