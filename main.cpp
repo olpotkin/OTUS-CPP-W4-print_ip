@@ -19,7 +19,10 @@ int main() {
   print_ip(std::string("192.168.1.1"));
   std::cout << std::endl;
 
-  print_ip(std::vector<std::string>{"192", "168", "1", "1"});
+  print_ip(std::vector<std::string>{"192", "168", "1", "2"});
+  std::cout << std::endl;
+
+  print_ip(std::list<unsigned int>{192, 168, 1, 3});
   std::cout << std::endl;
 
   return 0;

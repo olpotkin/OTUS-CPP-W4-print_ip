@@ -3,6 +3,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <list>
+
 
 /// References:
 /// - https://en.cppreference.com/w/cpp/types/enable_if
@@ -56,6 +58,26 @@ struct is_vector<std::vector<Args ...> > : std::true_type {};
 template <typename T>
 std::enable_if_t<is_vector<T>::value> print_ip(const T& ip) {
   // Iterate through the vector
+  for (const auto& it : ip) {
+    std::cout << it;
+    std::cout << (&it != &ip.back() ? "." : "");
+  }
+}
+
+
+template <typename T>
+struct is_list : std::false_type {};
+
+template <typename... Args>
+struct is_list<std::list<Args ...> > : std::true_type {};
+
+/// @brief  Prints IP represented as std::list
+/// @tparam T - std::list type
+/// @param  ip - IP address
+/// @author Oleg Potkin <olpotkin@gmail.com>
+template <typename T>
+std::enable_if_t<is_list<T>::value> print_ip(const T& ip) {
+  // Iterate through the list
   for (const auto& it : ip) {
     std::cout << it;
     std::cout << (&it != &ip.back() ? "." : "");
