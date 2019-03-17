@@ -26,7 +26,7 @@
 /// @param  ip - IP address
 /// @author Oleg Potkin <olpotkin@gmail.com>
 template <typename T>
-typename std::enable_if_t<std::is_integral_v<T>> print_ip(const T& ip) {
+typename std::enable_if_t<std::is_integral<T>::value> print_ip(const T& ip) {
   for (size_t sz = sizeof(T); sz != 0; --sz) {
     std::cout << ((ip >> (8 * (sz - 1))) & 0xff)
       << (sz != 1 ? "." : "");
