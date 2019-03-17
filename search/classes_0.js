@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['is_5flist',['is_list',['../structis__list.html',1,'']]],
-  ['is_5flist_3c_20std_3a_3alist_3c_20args_2e_2e_2e_3e_20_3e',['is_list&lt; std::list&lt; Args...&gt; &gt;',['../structis__list_3_01std_1_1list_3_01_args_8_8_8_4_01_4.html',1,'']]],
-  ['is_5fstring',['is_string',['../structis__string.html',1,'']]],
-  ['is_5fstring_3c_20std_3a_3astring_20_3e',['is_string&lt; std::string &gt;',['../structis__string_3_01std_1_1string_01_4.html',1,'']]],
-  ['is_5fvector',['is_vector',['../structis__vector.html',1,'']]],
-  ['is_5fvector_3c_20std_3a_3avector_3c_20args_2e_2e_2e_3e_20_3e',['is_vector&lt; std::vector&lt; Args...&gt; &gt;',['../structis__vector_3_01std_1_1vector_3_01_args_8_8_8_4_01_4.html',1,'']]]
+  ['all_5fsame_5fargs_5ft',['all_same_args_t',['../structall__same__args__t.html',1,'']]],
+  ['all_5fsame_5fargs_5ft_3c_20t_20_3e',['all_same_args_t&lt; T &gt;',['../structall__same__args__t_3_01_t_01_4.html',1,'']]],
+  ['all_5fsame_5fargs_5ft_3c_20t_2c_20args_2e_2e_2e_3e',['all_same_args_t&lt; T, Args...&gt;',['../structall__same__args__t.html',1,'']]],
+  ['all_5fsame_5fargs_5ft_3c_20t_2c_20t_2c_20args_2e_2e_2e_3e',['all_same_args_t&lt; T, T, Args...&gt;',['../structall__same__args__t_3_01_t_00_01_t_00_01_args_8_8_8_4.html',1,'']]],
+  ['all_5fsame_5fargs_5ft_3c_20t_2c_20u_2c_20args_2e_2e_2e_3e',['all_same_args_t&lt; T, U, Args...&gt;',['../structall__same__args__t_3_01_t_00_01_u_00_01_args_8_8_8_4.html',1,'']]]
 ];
