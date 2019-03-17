@@ -26,5 +26,8 @@ int main() {
   print_ip(std::list<unsigned int>{192, 168, 1, 3});
   std::cout << std::endl;
 
+  print_ip(std::make_tuple("192", "168", "1", "4"));
+  std::cout << std::endl;
+
   return 0;
 }

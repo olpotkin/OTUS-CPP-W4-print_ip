@@ -8,10 +8,10 @@ endif()
 
 configure_file(version.h.in ${PROJECT_SOURCE_DIR}/version.h)
 
-add_executable(print_ip main.cpp core/print_ip.cpp core/print_ip.h)
+add_executable(print_ip main.cpp  core/print_ip.h)
 
 set_target_properties(print_ip PROPERTIES
-        CXX_STANDARD 14
+        CXX_STANDARD 17
         CXX_STANDARD_REQUIRED ON
         COMPILE_OPTIONS "-Wpedantic;-Wall;-Wextra"
         )
